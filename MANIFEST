@@ -3,6 +3,5 @@ MANIFEST
 Makefile.PL
 README
 override.pm
-t/GlobalOverride.pm
 t/global.t
 t/local.t

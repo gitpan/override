@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 our @ISA = 'override::functions';
 
@@ -54,6 +54,7 @@ __END__
 override - Perl pragma to override core functions
 
 =head1 SYNOPSIS
+
   use override ucfirst => sub {
                                # make sure only the first
                                # letter is uppercased

@@ -23,8 +23,19 @@ sub ok {
 # (correspondingly "not ok 13") depending on the success of chunk 13
 # of the test code):
 
-use lib 't';
-use GlobalOverride;
+package GlobalOverride;
+
+use override GLOBAL_length => sub { length( join '', @_ ) };
+
+sub goodlength {
+  no override 'GLOBAL_length';
+  length( $_[0] );
+}
+
+1;
+
+package main;
+our @ISA = 'GlobalOverride';
 
 ok( 2, length( 'One', 'Two', 'Three' ) == 11 );
 
