@@ -1,0 +1,28 @@
+NAME
+
+override - Perl pragma to override core functions
+
+INSTALLATION
+
+  tar xzf override-1.00.tar.gz # GNU tar only!
+
+  # everyone else
+  gunzip override-1.00.tar.gz
+  tar xf override-1.00.tar
+
+  perl Makefile.PL
+  make
+  make test
+  make install
+
+AUTHOR
+
+Casey R. Tweten, crt@kiski.net
+
+COPYRIGHT
+
+Copyright (c) 2000 Casey R. Tweten <crt@kiski.net>.  All
+rights reserved.  This program is free software; you can
+redistribute it and/or modify it under the same terms as
+Perl itself.
+
